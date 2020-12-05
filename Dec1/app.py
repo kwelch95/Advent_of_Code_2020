@@ -15,12 +15,12 @@ for line in data.splitlines():
     number = int(line)
     numbers.append(number)
 
-combos = combinations(numbers,2)
+combos = combinations(numbers,3)
 #print(list(combos))
 
-for x, y in combos:
-    sums = x + y
+for x, y, z in combos:
+    sums = x + y + z
     if sums == 2020:
-        print(x, y, x * y)
+        print(x, y, z, x * y * z)
         break
 
