@@ -15,8 +15,6 @@ for line in data.splitlines():
     number = int(line)
     numbers.append(number)
 
-#print(numbers)
-
 combos = combinations(numbers,2)
 #print(list(combos))
 
